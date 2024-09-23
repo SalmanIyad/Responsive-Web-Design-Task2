@@ -1,0 +1,410 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+/* Gloval Props */
+* {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main-container {
+    width: 1080px;
+    margin: 0 auto;
+    padding: 0 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+section {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+/* header start */
+header {
+    background-color: rgb(240, 241, 237);
+    width: 100%;
+    position: fixed;
+    z-index: 99;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+}
+
+header .logo {
+    text-decoration: none;
+    color: rgb(69, 84, 224);
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 1.8em;
+}
+
+header .navigation a {
+    color: #464971;
+    font-size: 1.1em;
+    font-weight: 500;
+    text-decoration: none;
+    padding-left: 30px;
+}
+
+header .navigation a:hover {
+    color: rgb(99, 119, 209);
+}
+header .main-container {
+    flex-direction: row;
+}
+
+/* main start */
+.main {
+    width: 100%;
+    min-height: 100dvh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.main img {
+    border-radius: 50%;
+    transition: all 0.2s;
+}
+
+.main img:hover {
+    border-radius: 40% 60% 40% 60%;
+    box-shadow: 5px 5px 1px 1px #bdd4ffc0, 5px -5px 1px 1px #a1c2ffc0;
+}
+
+.main h2 {
+    color: #707fd4;
+    font-size: 1.5rem;
+}
+
+.main h2 span {
+    color: #596bd1;
+    font-size: 3.3rem;
+    font-weight: 700;
+    display: inline-block;
+    padding-top: 10px;
+    font-style: italic;
+}
+
+.main h3 {
+    color: #2e2e4d;
+    font-size: 2rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    padding-top: 10px;
+    padding-bottom: 30px;
+}
+
+.main-btn {
+    color: white;
+    background-color: #596bd1d3;
+    padding: 0.7rem;
+    text-decoration: none;
+    display: inline-block;
+    margin-bottom: 40px;
+    letter-spacing: 1px;
+    border-radius: 10px;
+    transition: 0.2s ease;
+}
+
+.main-btn:hover {
+    background-color: #6458ff;
+    box-shadow: 3px -2px 1px 1px #bdd4ffc0;
+}
+
+.title {
+    color: rgb(34, 112, 214);
+    font-weight: 700;
+    font-size: 2em;
+    margin-bottom: 1rem;
+}
+
+.subtitle {
+    color: #1a3246;
+    font-size: 1.3em;
+    margin-bottom: 2rem;
+}
+
+/* projects Start */
+.projects {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+
+.card {
+    background-color: transparent;
+    width: 30%;
+    min-width: 300px;
+    box-shadow: 4px -4px 1px 1px rgba(186, 192, 207, 0.418);
+    border-radius: 10px;
+    padding: 1.5rem;
+    transition: 0.2s ease;
+}
+
+.card:hover {
+    box-shadow: -4px 4px 1px 1px rgba(186, 192, 207, 0.418);
+}
+
+.cards .projects .card .info .icon {
+    width: 100%;
+    height: 15rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cards .projects .card .info .icon img {
+    height: 100%;
+    object-fit: cover;
+}
+
+.cards .projects .card .info .project-subtitle {
+    color: #464971;
+    font-size: 1rem;
+}
+
+.cards .projects .card .info {
+    text-align: center;
+}
+
+.info h3 {
+    color: rgb(70, 89, 113);
+    font-size: 1rem;
+    margin: 1rem;
+    font-weight: 700;
+}
+/* skills start */
+.skills-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #2e314d;
+}
+
+.skills-section .blog-content {
+    display: flex;
+    flex-flow: column wrap;
+    width: 100%;
+}
+/* blog start */
+.blog {
+    width: 40%;
+}
+
+.blog-post {
+    display: flex;
+    width: 90%;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0.4rem;
+}
+.skills-section .blog .blog-content .blog-post .date hr {
+    width: 30%;
+}
+.skills-section .blog .blog-content .blog-post .date {
+    display: flex;
+    flex-direction: column;
+    font-size: 0.8rem;
+}
+
+.skills-section .blog .blog-content .blog-post .date span {
+    min-width: max-content;
+}
+.skills-section .blog .blog-content .blog-post .date hr {
+    margin-top: 0.3rem;
+    margin-bottom: 0.3rem;
+}
+.skills-section .blog .blog-content .blog-post .icon {
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.skills-section .blog .blog-content .blog-post .icon img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.skills-section .blog .blog-content .blog-post .info {
+    font-size: 0.8rem;
+}
+.skills-section .blog .blog-content .blog-post .info h4 {
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.skills-section .skills {
+    width: 40%;
+    align-self: flex-start;
+}
+
+.skills-section .skills .skill div {
+    height: 0.55rem;
+    background-color: #c5c5c580;
+    margin-bottom: 1rem;
+    border-radius: 15px;
+}
+
+.skills-section .skills .skill div .skill-indicator-1 {
+    width: 95%;
+    background-color: #28adce;
+    border-radius: 15px;
+}
+
+.skills-section .skills .skill div .skill-indicator-2 {
+    width: 89%;
+    background-color: #229b1e;
+    border-radius: 15px;
+}
+
+.skills-section .skills .skill div .skill-indicator-3 {
+    width: 92%;
+    background-color: #1f1364;
+    border-radius: 15px;
+}
+
+.skills-section .blog .blog-btn  {
+    margin-top: 1rem;
+    color: white;
+    background-color: #596bd1d3;
+    padding: 0.7rem;
+    text-decoration: none;
+    display: inline-block;
+    margin-bottom: 40px;
+    letter-spacing: 1px;
+    border-radius: 10px;
+    transition: 0.2s ease;
+}
+
+.skills-section .blog .blog-btn:hover {
+    background-color: #6458ff;
+    box-shadow: 3px -2px 1px 1px #bdd4ffc0;
+}
+
+.about {
+    background-color: rgba(80, 80, 80, 0.774);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.about .main-container {
+    align-items: start;
+}
+
+.about .social {
+    margin-top: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1em;
+}
+
+.about .social .img-container {
+    width: 100%;
+    border-radius: 50%;
+}
+
+.about .social .img-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.about h2.title {
+    color: white;
+    font-size: x-large;
+}
+
+.social-icons a {
+    color: #ebebeb;
+    font-size: large;
+}
+
+.social-icons a:last-child {
+    border: none;
+}
+
+.social-icons a:hover {
+    color: rgba(35, 24, 135, 0.3);
+}
+
+.social-icons {
+    margin-top: 1rem;
+}
+
+/* footer start */
+.footer {
+    background-color: rgb(218, 223, 205);
+    color: rgb(46, 46, 77);
+    padding: 1em;
+    display: flex;
+    justify-content: center;
+}
+
+.footer-title {
+    font-size: .8em;
+    font-weight: 600;
+}
+
+.footer-title span {
+    color: rgb(1, 119, 255);
+}
+
+/* RWD */
+@media screen and (max-width: 1000px) {
+    .main-container {
+        width: 95%;
+    }
+    .main {
+        flex-direction: column-reverse;
+        gap: 2rem;
+    }
+    .main div {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: column;
+    }
+    header, projects {
+        flex-wrap: wrap;
+    }
+    .card {
+        width: 45%;
+    }
+    .skills-section {
+        flex-direction: column-reverse;
+    }
+    
+    .skills-section {
+        gap: 3rem;
+    }
+    .skills-section .skills, .blog {
+        width: 100%;
+    }
+} 
+@media screen and (max-width: 700px) {
+    .card {
+        width: 90%;
+    }
+    .about .social {
+        flex-direction: column;
+    }
+    .about .social .img-container {
+        width: 60%;
+    }
+} 
